@@ -1,0 +1,35 @@
+@import "syntax-variables";
+
+.html {
+
+  &.punctuation {
+    &.definition {
+      &.tag {
+        color: @redish;
+      }
+    }
+    &.separator {
+      &.key-value {
+        color: @orangish;
+      }
+    }
+  }
+
+  &.meta {
+    &.tag {
+      color: @redish;
+    }
+  }
+
+  &.entity {
+    &.name {
+      color: @flat-green;
+      text-decoration: none;
+    }
+    &.other {
+      &.attribute-name {
+        color: @orangish;
+      }
+    }
+  }
+}
