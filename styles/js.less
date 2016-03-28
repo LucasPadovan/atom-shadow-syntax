@@ -1,0 +1,55 @@
+@import "syntax-variables";
+
+.js, .css {
+    &.punctuation, &.source {
+        color: white;
+    }
+    .entity.name.function,
+    .function {
+        color: @light-cyan;
+    }
+
+    &.storage {
+        &.type {
+            &.function {
+                color: @redish;
+            }
+            &.var {
+                color: @redish;
+            }
+        }
+    }
+
+    &.variable {
+        &.parameter {
+            color: @aquamarine;
+        }
+    }
+
+    &.meta {
+        &.arguments {
+            color: @light-purple;
+
+            .punctuation {
+                color: white;
+            }
+            .variable {
+                color: @redish;
+                &.property {
+                    color: @orangish;
+                }
+                &.parameter {
+                    color: @aquamarine;
+                }
+            }
+            .support {
+                &.constant {
+                    color: @light-purple;
+                }
+            }
+        }
+        &.brace.curly {
+            color: white;
+        }
+    }
+}

@@ -1,3 +1,4 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+## 0.2.0 - First revision
+* Added base colors for javascript
+* Added some colors for css/less
+* Added base color for md files

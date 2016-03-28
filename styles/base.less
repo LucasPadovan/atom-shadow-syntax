@@ -3,6 +3,7 @@
 atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
+  color: #11131a;
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
@@ -28,6 +29,12 @@ atom-text-editor, :host {
 
       &.cursor-line-no-selection {
         color: @syntax-gutter-text-color-selected;
+      }
+      .icon-right::before {
+          color: @aquamarine;
+          border: 1px solid @aquamarine;
+          padding: 2px;
+          border-radius: 5px;
       }
     }
   }
@@ -312,14 +319,21 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.source.gfm .markup {
-  -webkit-font-smoothing: auto;
-  &.heading {
-    color: @green;
+.source.gfm {
+  .markup {
+    -webkit-font-smoothing: auto;
+    &.heading {
+      color: @green;
+    }
   }
+  color: @very-light-gray;
 }
 
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
+}
+
+.text {
+    color: @very-light-gray !important;
 }
